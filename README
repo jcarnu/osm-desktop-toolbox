@@ -1,3 +1,7 @@
 This project aims to federates small (but beautiful) desktop tools for Open Street Map.
 Desktop tools should be small piece of code enhancing  (for instance) use of GPS device
 and GPS trace to be posted on osm. 
+
+Consider using cURL as command line tool
+Example :
+curl -v  -F 'file=@<gpx_filename>' -F description=Not%20So%Blank -F public=0 -F visibility=private http://login:passwd@api.openstreetmap.org/api/0.6/gpx/create
